@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B1A2ADC5394007B0EEF /* Domino.swift */; };
+		43936B1F2ADC6BF6007B0EEF /* DominoMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B1E2ADC6BF6007B0EEF /* DominoMoves.swift */; };
+		43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B202ADC8192007B0EEF /* DominoBoard.swift */; };
+		43936B232ADC9489007B0EEF /* DominoTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B222ADC9489007B0EEF /* DominoTap.swift */; };
+		43BE7D962ADC2E4E00674198 /* DominoMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */; };
+		43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE7D972ADC2E4E00674198 /* ContentView.swift */; };
+		43BE7D9A2ADC2E5100674198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D992ADC2E5100674198 /* Assets.xcassets */; };
+		43BE7D9D2ADC2E5100674198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43936B1A2ADC5394007B0EEF /* Domino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domino.swift; sourceTree = "<group>"; };
+		43936B1E2ADC6BF6007B0EEF /* DominoMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoMoves.swift; sourceTree = "<group>"; };
+		43936B202ADC8192007B0EEF /* DominoBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoBoard.swift; sourceTree = "<group>"; };
+		43936B222ADC9489007B0EEF /* DominoTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoTap.swift; sourceTree = "<group>"; };
+		43BE7D922ADC2E4E00674198 /* DominoMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DominoMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoMathApp.swift; sourceTree = "<group>"; };
+		43BE7D972ADC2E4E00674198 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43BE7D992ADC2E5100674198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43BE7D8F2ADC2E4E00674198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43BE7D892ADC2E4E00674198 = {
+			isa = PBXGroup;
+			children = (
+				43BE7D942ADC2E4E00674198 /* DominoMath */,
+				43BE7D932ADC2E4E00674198 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43BE7D932ADC2E4E00674198 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43BE7D922ADC2E4E00674198 /* DominoMath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43BE7D942ADC2E4E00674198 /* DominoMath */ = {
+			isa = PBXGroup;
+			children = (
+				43BE7DA32ADC2EBB00674198 /* Model */,
+				43BE7DA52ADC2ED900674198 /* View */,
+				43BE7D992ADC2E5100674198 /* Assets.xcassets */,
+				43BE7D9B2ADC2E5100674198 /* Preview Content */,
+			);
+			path = DominoMath;
+			sourceTree = "<group>";
+		};
+		43BE7D9B2ADC2E5100674198 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43BE7DA32ADC2EBB00674198 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43BE7DA52ADC2ED900674198 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */,
+				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
+				43936B202ADC8192007B0EEF /* DominoBoard.swift */,
+				43936B1A2ADC5394007B0EEF /* Domino.swift */,
+				43936B222ADC9489007B0EEF /* DominoTap.swift */,
+				43936B1E2ADC6BF6007B0EEF /* DominoMoves.swift */,
+			);
+			name = View;
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43BE7D912ADC2E4E00674198 /* DominoMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43BE7DA02ADC2E5100674198 /* Build configuration list for PBXNativeTarget "DominoMath" */;
+			buildPhases = (
+				43BE7D8E2ADC2E4E00674198 /* Sources */,
+				43BE7D8F2ADC2E4E00674198 /* Frameworks */,
+				43BE7D902ADC2E4E00674198 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DominoMath;
+			productName = DominoMath;
+			productReference = 43BE7D922ADC2E4E00674198 /* DominoMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43BE7D8A2ADC2E4E00674198 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					43BE7D912ADC2E4E00674198 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 43BE7D8D2ADC2E4E00674198 /* Build configuration list for PBXProject "DominoMath" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43BE7D892ADC2E4E00674198;
+			productRefGroup = 43BE7D932ADC2E4E00674198 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43BE7D912ADC2E4E00674198 /* DominoMath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43BE7D902ADC2E4E00674198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BE7D9D2ADC2E5100674198 /* Preview Assets.xcassets in Resources */,
+				43BE7D9A2ADC2E5100674198 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43BE7D8E2ADC2E4E00674198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43936B1F2ADC6BF6007B0EEF /* DominoMoves.swift in Sources */,
+				43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */,
+				43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */,
+				43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */,
+				43BE7D962ADC2E4E00674198 /* DominoMathApp.swift in Sources */,
+				43936B232ADC9489007B0EEF /* DominoTap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		43BE7D9E2ADC2E5100674198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43BE7D9F2ADC2E5100674198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43BE7DA12ADC2E5100674198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DominoMath/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Academy-Taissa.Bernardo.Julia.DominoMath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43BE7DA22ADC2E5100674198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DominoMath/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Academy-Taissa.Bernardo.Julia.DominoMath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43BE7D8D2ADC2E4E00674198 /* Build configuration list for PBXProject "DominoMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BE7D9E2ADC2E5100674198 /* Debug */,
+				43BE7D9F2ADC2E5100674198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43BE7DA02ADC2E5100674198 /* Build configuration list for PBXNativeTarget "DominoMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BE7DA12ADC2E5100674198 /* Debug */,
+				43BE7DA22ADC2E5100674198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43BE7D8A2ADC2E4E00674198 /* Project object */;
+}
