@@ -15,14 +15,12 @@ struct ContentView: View {
         ScrollView(Axis.Set.horizontal) {
             HStack {
                 DominoMoves()
-                DominoMoves()
             }
             .zIndex(1)
                 VStack {
                     DominoBoard()
                 }
                 HStack {
-                    DominoMoves()
                     DominoMoves()
                 }
             }
