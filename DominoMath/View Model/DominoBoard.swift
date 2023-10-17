@@ -16,7 +16,7 @@ struct DominoBoard: View {
             ZStack {
                 Rectangle()
                     .fill(Color.purple)
-                    .frame(minWidth: boardWidth, maxHeight: boardHeight * 0.6)
+                    .frame(minWidth: boardWidth * 4, maxHeight: boardHeight * 0.6)
             }
         }
     }

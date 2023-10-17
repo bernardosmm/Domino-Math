@@ -13,19 +13,15 @@ struct ContentView: View {
     var body: some View {
         
         ScrollView(Axis.Set.horizontal) {
-            HStack {
+            ZStack {
+                DominoBoard()
                 DominoMoves()
-            }
-            .zIndex(1)
-                VStack {
-                    DominoBoard()
-                }
-                HStack {
-                    DominoMoves()
-                }
+                DominoMoves()
             }
         }
     }
+    
+}
     
     
     struct ContentView_Previews: PreviewProvider {

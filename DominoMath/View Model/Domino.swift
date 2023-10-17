@@ -56,19 +56,18 @@ struct Domino: View {
                 .stroke(Color.black, lineWidth: 5)
         )
         .rotationEffect(angle) // Aplicar rotação à ZStack que contém ambos os retângulos
-                .gesture(
-                    RotationGesture()
-                        .onChanged { value in
-                            angle = value
-                            
-                        }
-                        .onEnded { value in
-                            withAnimation(.spring()) {
-                                angle = Angle(degrees: 0)
-                            }
-                            
-                        }
-                )
+        .gesture(
+            RotationGesture()
+                .onChanged { value in
+                    angle = value
+                    
+                }
+//                .onEnded { value in
+//                    withAnimation(.spring()) {
+//                        angle = Angle(degrees: 0)
+//                    }
+//                }
+        )
             
     }}
 struct Domino_Previews: PreviewProvider {

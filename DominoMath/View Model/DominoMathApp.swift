@@ -11,7 +11,7 @@ import SwiftUI
 struct DominoMathApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Domino()
         }
     }
 }
