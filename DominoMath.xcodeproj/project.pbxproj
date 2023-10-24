@@ -61,7 +61,6 @@
 		43BE7D942ADC2E4E00674198 /* DominoMath */ = {
 			isa = PBXGroup;
 			children = (
-				43BE7DA32ADC2EBB00674198 /* Model */,
 				43BE7DA52ADC2ED900674198 /* View */,
 				43BE7D992ADC2E5100674198 /* Assets.xcassets */,
 				43BE7D9B2ADC2E5100674198 /* Preview Content */,
@@ -75,13 +74,6 @@
 				43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		43BE7DA32ADC2EBB00674198 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		43BE7DA52ADC2ED900674198 /* View */ = {
