@@ -15,6 +15,7 @@
 		43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE7D972ADC2E4E00674198 /* ContentView.swift */; };
 		43BE7D9A2ADC2E5100674198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D992ADC2E5100674198 /* Assets.xcassets */; };
 		43BE7D9D2ADC2E5100674198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */; };
+		CEA250802AE83D3F00E3AC5B /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		43BE7D972ADC2E4E00674198 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43BE7D992ADC2E5100674198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				43936B1A2ADC5394007B0EEF /* Domino.swift */,
 				43936B222ADC9489007B0EEF /* DominoTap.swift */,
 				43936B1E2ADC6BF6007B0EEF /* DominoDrag.swift */,
+				CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */,
 			);
 			name = View;
 			path = "View Model";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA250802AE83D3F00E3AC5B /* InicioView.swift in Sources */,
 				43936B1F2ADC6BF6007B0EEF /* DominoDrag.swift in Sources */,
 				43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */,
 				43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */,
