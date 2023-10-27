@@ -15,7 +15,7 @@ struct DominoMoves:View {
     var body: some View {
 
         ZStack {
-            Domino()
+            Domino(a: "3+3", b: "3+3")
         }
         .position(location)
         .simultaneousGesture(

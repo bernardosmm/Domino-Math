@@ -1,21 +1,16 @@
-//
-//  Domino.swift
-//  DominoMath
-//
-//  Created by user247327 on 15/10/23.
-//
-
 import Foundation
 import SwiftUI
 
 struct Domino: View {
     
+    let a: String
+    let b: String
+    
     @State var angle: Angle = Angle(degrees: 0)
     
     var shouldRotateText: Bool {
-            // Determine se o texto deve ser rotacionado com base na orientação da ZStack
-            return abs(angle.degrees) > 45
-        }
+        return abs(angle.degrees) > 45
+    }
     
     var body: some View {
         ZStack {
@@ -24,54 +19,41 @@ struct Domino: View {
                 Rectangle()
                     .fill(Color.blue)
                     .frame(width: 80, height: 60)
-//                    .cornerRadius(15)
                     .overlay(
-                        Text("3+3")
+                        Text(a)
                             .font(.title2)
                             .foregroundColor(Color.black)
                             .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
-                
-                
-//
-                
                 Rectangle()
                     .fill(Color.red)
                     .frame(width: 80, height: 60)
-//                    .cornerRadius(15)
                     .overlay(
-                        Text("3+3")
+                        Text(b)
                             .font(.title2)
                             .foregroundColor(Color.black)
                             .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
             }
-            
-
         }
         .background(Color.black)
-        .cornerRadius(15)//
+        .cornerRadius(15)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.black, lineWidth: 5)
         )
-        .rotationEffect(angle) // Aplicar rotação à ZStack que contém ambos os retângulos
+        .rotationEffect(angle)
         .gesture(
             RotationGesture()
                 .onChanged { value in
                     angle = value
                     
                 }
-//                .onEnded { value in
-//                    withAnimation(.spring()) {
-//                        angle = Angle(degrees: 0)
-//                    }
-//                }
         )
-            
+        
     }}
 struct Domino_Previews: PreviewProvider {
     static var previews: some View {
-        Domino()
+        Domino(a: "3+3", b: "3+3")
     }
 }
