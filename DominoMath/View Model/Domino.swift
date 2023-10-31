@@ -39,9 +39,11 @@ struct Domino: View {
                             .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
             }
+            
         }
         .background(Color.black)
         .cornerRadius(15)
+        .border(.green, width: 10)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.black, lineWidth: 5)
@@ -55,6 +57,7 @@ struct Domino: View {
                     }
         )
         //DominoDrag
+//        .offset(x: location.x, y: location.y)
         .position(location)
         .simultaneousGesture(
             DragGesture(minimumDistance: 0)
@@ -65,13 +68,14 @@ struct Domino: View {
                     print("onEnded")
                 }
         )
+        .frame(width: 80, height: 120)
         
     }}
 
 struct Domino_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
-            List(dominoes) { dominoset in
+        ScrollView(.horizontal) {
+            ForEach(dominoes) { dominoset in
                 Domino(domino: dominoset)
             }
         }
