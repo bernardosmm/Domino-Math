@@ -6,7 +6,8 @@ struct Domino: View {
     let a: String
     let b: String
     
-    @State var angle: Angle = Angle(degrees: 0)
+    @State var angle: Angle = Angle(degrees: 0) //rotation
+    @State private var location: CGPoint = CGPoint(x: 50, y: 50) //drag
     
     var shouldRotateText: Bool {
         return abs(angle.degrees) > 45
@@ -42,16 +43,28 @@ struct Domino: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.black, lineWidth: 5)
         )
+        //DominoRotation
         .rotationEffect(angle)
         .gesture(
             RotationGesture()
                 .onChanged { value in
                     angle = value
-                    
+                    }
+        )
+        //DominoDrag
+        .position(location)
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged { value in
+                    self.location = value.location
+                }
+                .onEnded { value in
+                    print("onEnded")
                 }
         )
         
     }}
+
 struct Domino_Previews: PreviewProvider {
     static var previews: some View {
         Domino(a: "3+3", b: "3+3")

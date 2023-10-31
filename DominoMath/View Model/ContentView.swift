@@ -15,8 +15,8 @@ struct ContentView: View {
         ScrollView(Axis.Set.horizontal) {
             ZStack {
                 DominoBoard()
-                DominoMoves()
-                DominoMoves()
+                Domino(a: "4 - 2", b: "2 x 2")
+                Domino(a: "4 - 2", b: "2 x 2")
             }
         }
     }

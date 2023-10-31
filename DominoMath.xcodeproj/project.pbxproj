@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B1A2ADC5394007B0EEF /* Domino.swift */; };
-		43936B1F2ADC6BF6007B0EEF /* DominoDrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B1E2ADC6BF6007B0EEF /* DominoDrag.swift */; };
 		43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B202ADC8192007B0EEF /* DominoBoard.swift */; };
 		43936B232ADC9489007B0EEF /* DominoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B222ADC9489007B0EEF /* DominoModel.swift */; };
 		43BE7D962ADC2E4E00674198 /* DominoMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		43936B1A2ADC5394007B0EEF /* Domino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domino.swift; sourceTree = "<group>"; };
-		43936B1E2ADC6BF6007B0EEF /* DominoDrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoDrag.swift; sourceTree = "<group>"; };
 		43936B202ADC8192007B0EEF /* DominoBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoBoard.swift; sourceTree = "<group>"; };
 		43936B222ADC9489007B0EEF /* DominoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoModel.swift; sourceTree = "<group>"; };
 		43BE7D922ADC2E4E00674198 /* DominoMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DominoMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,12 +81,19 @@
 				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
 				43936B202ADC8192007B0EEF /* DominoBoard.swift */,
 				43936B1A2ADC5394007B0EEF /* Domino.swift */,
-				43936B222ADC9489007B0EEF /* DominoModel.swift */,
-				43936B1E2ADC6BF6007B0EEF /* DominoDrag.swift */,
 				CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */,
+				CE04A9D62AF17F7600E51F97 /* Model */,
 			);
 			name = View;
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		CE04A9D62AF17F7600E51F97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43936B222ADC9489007B0EEF /* DominoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +167,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA250802AE83D3F00E3AC5B /* InicioView.swift in Sources */,
-				43936B1F2ADC6BF6007B0EEF /* DominoDrag.swift in Sources */,
 				43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */,
 				43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */,
 				43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */,
