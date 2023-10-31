@@ -77,11 +77,11 @@
 		43BE7DA52ADC2ED900674198 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */,
-				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
-				43936B202ADC8192007B0EEF /* DominoBoard.swift */,
-				43936B1A2ADC5394007B0EEF /* Domino.swift */,
 				CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */,
+				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
+				43936B1A2ADC5394007B0EEF /* Domino.swift */,
+				43936B202ADC8192007B0EEF /* DominoBoard.swift */,
+				43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */,
 				CE04A9D62AF17F7600E51F97 /* Model */,
 			);
 			name = View;

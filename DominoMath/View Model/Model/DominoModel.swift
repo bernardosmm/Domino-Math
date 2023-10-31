@@ -8,27 +8,25 @@
 import Foundation
 import SwiftUI
 
-struct DominoModel {
+struct DominoModel: Identifiable {
+    let id = UUID()
     let ladoATexto: String
     let ladoAValor: Int
     let ladoBTexto: String
     let ladoBValor: Int
 }
 
-struct DominoUnidade: View {
-    
-    let modelo = DominoModel(
-        ladoATexto: "3+3",
-        ladoAValor: 6,
-        ladoBTexto: "2+2",
-        ladoBValor: 4
-    )
-    
-    var body: some View {
-        VStack {
-            Domino(a: "3+3", b: "3+3")
-            Domino(a: "2+2", b: "8/2")
-            
-        }
-    }
-}
+let dominoes = [
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+]

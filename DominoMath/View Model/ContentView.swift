@@ -13,10 +13,13 @@ struct ContentView: View {
     var body: some View {
         
         ScrollView(Axis.Set.horizontal) {
+            HStack {
+                List(dominoes) { dominoset in
+                    Domino(domino: dominoset)
+                }
+            }
             ZStack {
                 DominoBoard()
-                Domino(a: "4 - 2", b: "2 x 2")
-                Domino(a: "4 - 2", b: "2 x 2")
             }
         }
     }
