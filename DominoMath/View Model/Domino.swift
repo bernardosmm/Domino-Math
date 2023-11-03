@@ -21,7 +21,7 @@ struct Domino: View {
             
             VStack {
                 Rectangle()
-                    .fill(Color.blue)
+                    .fill(Color.white)
                     .frame(width: 80, height: 60)
                     .overlay(
                         Text(domino.ladoATexto)
@@ -30,7 +30,7 @@ struct Domino: View {
                             .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
                 Rectangle()
-                    .fill(Color.red)
+                    .fill(Color.white)
                     .frame(width: 80, height: 60)
                     .overlay(
                         Text(domino.ladoBTexto)
@@ -43,7 +43,6 @@ struct Domino: View {
         }
         .background(Color.black)
         .cornerRadius(15)
-        .border(.green, width: 10)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.black, lineWidth: 5)

@@ -13,12 +13,16 @@ struct DominoBoard: View {
         let boardSize = UIScreen.main.bounds
         let boardWidth = boardSize.width
         let boardHeight = boardSize.height
-            ZStack {
-                Rectangle()
-                    .fill(Color.purple)
-                    .frame(minWidth: boardWidth * 4, maxHeight: boardHeight * 0.6)
-            }
+        ZStack {
+            Rectangle()
+                .fill(Color.white)
+                .frame(width: boardWidth * 4, height: boardHeight * 1.0)
+            Rectangle()
+                .fill(Color.purple)
+                .frame(width: boardWidth * 4, height: boardHeight * 0.6)
         }
+    }
+        
     }
 
 struct DominoBoard_Previews: PreviewProvider {

@@ -11,15 +11,26 @@ struct ContentView: View {
     
     
     var body: some View {
-        ScrollView(Axis.Set.horizontal) {
-            ZStack(alignment: .leading) {
-                DominoBoard()
-                HStack {
-                    ForEach(dominoes) { dominoset in
-                        Domino(domino: dominoset)
+        ScrollView([.horizontal]) {
+            VStack {
+                ZStack(alignment: .topLeading) {
+                    DominoBoard()
+                    HStack {
+                        ForEach(Array(dominoes.prefix(6))) { dominoset in
+                            Domino(domino: dominoset)
+                        }
                     }
+                    .padding(.top, 100)
                 }
-                .frame(maxHeight: .infinity)
+                ZStack() {
+                    HStack {
+                        ForEach(Array(dominoes.prefix(6))) { dominoset in
+                            Domino(domino: dominoset)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .bottomLeading)
+                    .offset(y: -200)
+                }
             }
         }
     }
