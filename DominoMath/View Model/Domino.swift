@@ -27,7 +27,7 @@ struct Domino: View {
                         Text(domino.ladoATexto)
                             .font(.title2)
                             .foregroundColor(Color.black)
-                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
+//                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
                 Rectangle()
                     .fill(Color.white)
@@ -36,7 +36,7 @@ struct Domino: View {
                         Text(domino.ladoBTexto)
                             .font(.title2)
                             .foregroundColor(Color.black)
-                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
+//                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
             }
             
@@ -73,10 +73,8 @@ struct Domino: View {
 
 struct Domino_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView(.horizontal) {
             ForEach(dominoes) { dominoset in
                 Domino(domino: dominoset)
             }
         }
     }
-}
