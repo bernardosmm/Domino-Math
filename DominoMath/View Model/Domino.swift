@@ -5,7 +5,7 @@ struct Domino: View {
     
     //rotation
     @State var angle: Angle = Angle(degrees: 0)
-    
+
     //drag
     @State private var location: CGPoint = CGPoint(x: 50, y: 50)
     

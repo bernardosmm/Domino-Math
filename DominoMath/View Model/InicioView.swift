@@ -16,6 +16,7 @@ struct InicioView: View {
                     
                     NavigationLink(destination: ContentView()) {
                         Text("Jogar")
+                            .font(.largeTitle)
                             .foregroundColor(Color(hex: "FDAA22"))
                             .padding(EdgeInsets(top: 20, leading: 50, bottom: 20, trailing: 50))
                             .background(Color(hex: "E74F36"))
@@ -27,14 +28,6 @@ struct InicioView: View {
             }
             
         }
-    }
-}
-
-struct OutraTelaView: View {
-    var body: some View {
-        Text("Esta é a outra tela")
-            .navigationBarTitle("Outra Tela")
-            .navigationBarBackButtonHidden(true) // Oculta o botão de retorno
     }
 }
 
