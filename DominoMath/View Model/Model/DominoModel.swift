@@ -28,4 +28,16 @@ let dominoes = [
     DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
     DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
     DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5),
+    DominoModel(ladoATexto: "3 + 2", ladoAValor: 5, ladoBTexto: "5 / 5", ladoBValor: 1),
+    DominoModel(ladoATexto: "1 x 2", ladoAValor: 2, ladoBTexto: "1 + 4", ladoBValor: 5)
 ]

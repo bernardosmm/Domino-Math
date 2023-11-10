@@ -5,8 +5,8 @@
 //  Created by user247327 on 15/10/23.
 //
 
-import Foundation
 import SwiftUI
+import Foundation
 
 struct DominoBoard: View {
     var body: some View {
@@ -15,15 +15,14 @@ struct DominoBoard: View {
         let boardHeight = boardSize.height
         ZStack {
             Rectangle()
-                .fill(Color.white)
-                .frame(width: boardWidth * 4, height: boardHeight * 1.0)
-            Rectangle()
-                .fill(Color.purple)
-                .frame(width: boardWidth * 4, height: boardHeight * 0.6)
+                .fill(Color(hex: "2B8B81"))
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+               .frame(width: boardWidth * 4, height: boardHeight * 1.0)
+                Image("oii")
+                .frame(width: boardWidth * 4, height: boardHeight * 0.5)
         }
     }
-        
-    }
+}
 
 struct DominoBoard_Previews: PreviewProvider {
     static var previews: some View {
