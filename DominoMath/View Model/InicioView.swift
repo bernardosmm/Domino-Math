@@ -16,11 +16,11 @@ struct InicioView: View {
                     
                     NavigationLink(destination: ContentView()) {
                         Text("Jogar")
-                            .font(.largeTitle)
-                            .foregroundColor(Color(hex: "FDAA22"))
+                            .font(.largeTitle) //Aumenta a fonte
+                            .foregroundColor(Color(.white))
                             .padding(EdgeInsets(top: 20, leading: 50, bottom: 20, trailing: 50))
                             .background(Color(hex: "E74F36"))
-                            .cornerRadius(20)
+                            .cornerRadius(35)
                             .font(.system(size:23))
                         
                     }
