@@ -9,43 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ZStack(alignment: .topLeading) {
-                DominoBoard()
-                HStack {
-                    ForEach(Array(dominoes.prefix(6))) { dominoset in
-                        Domino(domino: dominoset)
-                            .position(x: 100, y: 50)
-                    }
+        ZStack {
+            DominoBoard()
+            HStack {
+                ForEach(Array(dominoes.prefix(6))) { dominoset in
+                    Domino(domino: dominoset)
                 }
-                ZStack {
-                    HStack {
-                        ForEach(Array(dominoes.prefix(6))) { dominoset in
-                            Domino(domino: dominoset)
-                        }
-                    }
-                    .frame(maxWidth: .infinity, alignment: .bottomLeading)
-                    .offset(y: -200)
-                }
-            }
-                .padding(.top, 100)
+                .offset(x: -10, y: -500)
             }
             HStack {
                 ForEach(Array(dominoes.prefix(6))) { dominoset in
                     Domino(domino: dominoset)
-                        .position(x: 100, y: 50)
                 }
+                .offset(x: -10, y: 500)
             }
-            .frame(maxWidth: .infinity, alignment: .bottomLeading)
-            .offset(y: -200)
-
+            .navigationBarBackButtonHidden(true)
         }
-        .navigationBarBackButtonHidden(true)
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
