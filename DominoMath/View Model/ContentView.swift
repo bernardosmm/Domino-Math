@@ -11,7 +11,7 @@ struct ContentView: View {
     
     
     var body: some View {
-        ScrollView([.horizontal]) {
+        //ScrollView([.horizontal]) {
             VStack {
                 ZStack(alignment: .topLeading) {
                     DominoBoard()
@@ -22,7 +22,10 @@ struct ContentView: View {
                     }
                     .padding(.top, 100)
                 }
-                ZStack() {
+                ZStack {
+                    
+                }
+                ZStack {
                     HStack {
                         ForEach(Array(dominoes.prefix(6))) { dominoset in
                             Domino(domino: dominoset)
@@ -32,7 +35,7 @@ struct ContentView: View {
                     .offset(y: -200)
                 }
             }
-        }
+        //}
         .navigationBarBackButtonHidden(true)
     }
 
