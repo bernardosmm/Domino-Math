@@ -20,6 +20,7 @@ struct DominoBoard: View {
                .frame(width: boardWidth * 4, height: boardHeight * 1.0)
                 Image("oii")
                 .frame(width: boardWidth * 4, height: boardHeight * 0.5)
+                .scaledToFit()
         }
     }
 }
