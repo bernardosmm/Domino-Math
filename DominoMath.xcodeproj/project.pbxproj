@@ -81,10 +81,7 @@
 			children = (
 				CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */,
 				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
-				CE04A9D92AFD588B00E51F97 /* Button.swift */,
-				43936B1A2ADC5394007B0EEF /* Domino.swift */,
-				43936B202ADC8192007B0EEF /* DominoBoard.swift */,
-				43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */,
+				CE04A9DB2B03FC1900E51F97 /* Elements */,
 				CE04A9D62AF17F7600E51F97 /* Model */,
 			);
 			name = View;
@@ -95,8 +92,19 @@
 			isa = PBXGroup;
 			children = (
 				43936B222ADC9489007B0EEF /* DominoModel.swift */,
+				43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CE04A9DB2B03FC1900E51F97 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				CE04A9D92AFD588B00E51F97 /* Button.swift */,
+				43936B1A2ADC5394007B0EEF /* Domino.swift */,
+				43936B202ADC8192007B0EEF /* DominoBoard.swift */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

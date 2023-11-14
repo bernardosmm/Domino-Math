@@ -52,7 +52,6 @@ struct Domino: View {
         .gesture(
             TapGesture(count: 1)
                 .onEnded { _ in
-                    // Girar 90 graus
                     angle += Angle(degrees: 90)
                 }
         )
