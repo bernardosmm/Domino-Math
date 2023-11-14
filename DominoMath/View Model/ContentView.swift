@@ -15,13 +15,13 @@ struct ContentView: View {
                 ForEach(Array(dominoes.prefix(6))) { dominoset in
                     Domino(domino: dominoset)
                 }
-                .offset(x: -10, y: -500)
+                .offset(x: -10, y: -460)
             }
             HStack {
                 ForEach(Array(dominoes.prefix(6))) { dominoset in
                     Domino(domino: dominoset)
                 }
-                .offset(x: -10, y: 500)
+                .offset(x: -10, y: 475)
             }
             .navigationBarBackButtonHidden(true)
         }
