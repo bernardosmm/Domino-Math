@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-
-
 func checkWinner() {
     
 }
@@ -18,14 +16,14 @@ func checkQtdDominoes() {
     
 }
 
-struct ChangeTurno: View {
+struct Winner: View {
     
     var body: some View {
         Text("Oi")
     }
 }
-struct ChangeTurno_Previews: PreviewProvider {
+struct Winner_Previews: PreviewProvider {
     static var previews: some View {
-        ChangeTurno()
+        Winner()
     }
 }
