@@ -17,6 +17,8 @@ struct ContentView: View {
                 }
                 .offset(x: -10, y: -500)
             }
+            ButtonTurnos()
+                .offset(x: 270, y: 360)
             HStack {
                 ForEach(Array(dominoes.prefix(6))) { dominoset in
                     Domino(domino: dominoset)
