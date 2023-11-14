@@ -50,10 +50,11 @@ struct Domino: View {
         //DominoRotation
         .rotationEffect(angle)
         .gesture(
-            RotationGesture()
-                .onChanged { value in
-                    angle = value
-                    }
+            TapGesture(count: 1)
+                .onEnded { _ in
+                    // Girar 90 graus
+                    angle += Angle(degrees: 90)
+                }
         )
         //DominoDrag
 //        .offset(x: location.x, y: location.y)
