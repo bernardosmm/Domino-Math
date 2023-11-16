@@ -14,6 +14,7 @@ struct DominoBoard: View {
         let boardWidth = boardSize.width
         let boardHeight = boardSize.height
         
+        
         ZStack {
             Rectangle()
                 .fill(Color(hex: "2B8B81"))
@@ -31,3 +32,4 @@ struct DominoBoard_Previews: PreviewProvider {
         DominoBoard()
     }
 }
+

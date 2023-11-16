@@ -15,6 +15,7 @@
 		43BE7D9A2ADC2E5100674198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D992ADC2E5100674198 /* Assets.xcassets */; };
 		43BE7D9D2ADC2E5100674198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */; };
 		CE04A9DA2AFD588B00E51F97 /* CheckWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04A9D92AFD588B00E51F97 /* CheckWinner.swift */; };
+		CE2832422B06B49100F84959 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2832412B06B49100F84959 /* OnboardingView.swift */; };
 		CEA250802AE83D3F00E3AC5B /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		43BE7D992ADC2E5100674198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE04A9D92AFD588B00E51F97 /* CheckWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckWinner.swift; sourceTree = "<group>"; };
+		CE2832412B06B49100F84959 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				CE04A9DB2B03FC1900E51F97 /* Elements */,
 				CE04A9DC2B04026500E51F97 /* Functions */,
 				CE04A9D62AF17F7600E51F97 /* Model */,
+				CE2832412B06B49100F84959 /* OnboardingView.swift */,
 			);
 			name = View;
 			path = "View Model";
@@ -190,6 +193,7 @@
 				43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */,
 				43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */,
 				43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */,
+				CE2832422B06B49100F84959 /* OnboardingView.swift in Sources */,
 				43BE7D962ADC2E4E00674198 /* DominoMathApp.swift in Sources */,
 				43936B232ADC9489007B0EEF /* DominoModel.swift in Sources */,
 			);
