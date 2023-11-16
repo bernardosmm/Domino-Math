@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
+        
         ZStack {
+            
             DominoBoard()
             // Peças para o segundo jogador (parte superior da tela)
             VStack {
@@ -29,7 +31,7 @@ struct ContentView: View {
                         Domino(domino: dominoset)
                             .rotationEffect(.degrees(180))
                     }
-                    .offset(x: -10, y: -547)
+                    .offset(x: -10, y: -510)
                 }
             }
             // Peças para o primeiro jogador (parte inferior da tela)
@@ -41,14 +43,18 @@ struct ContentView: View {
                     Domino(domino: dominoset)
                     
                 }
-                .offset(x: -10, y: 547)
+                .offset(x: -10, y: 500)
             }
             Text("Player 1")
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
-                    .padding(.bottom)
-                    .offset(x: -15, y: 365)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color(hex: "2B8B81"))
+                    .cornerRadius(15)
+                    .offset(x: 336, y: 330)
+                    
+                    
 
             }
             .navigationBarBackButtonHidden(true)
