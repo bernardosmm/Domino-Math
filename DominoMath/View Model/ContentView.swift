@@ -15,10 +15,12 @@ struct ContentView: View {
             // Peças para o segundo jogador (parte superior da tela)
             VStack {
                 Text("Player 2")
-                    .foregroundColor(.white)
+                    .font(.system(size:20))
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
                     .padding(.top)
-                    .offset(x: -10, y: 355)
                     .rotationEffect(.degrees(180))
+                    .offset(x: -15, y: -347)
                 
                 
                 
@@ -27,7 +29,7 @@ struct ContentView: View {
                         Domino(domino: dominoset)
                             .rotationEffect(.degrees(180))
                     }
-                    .offset(x: -10, y: -530)
+                    .offset(x: -10, y: -547)
                 }
             }
             // Peças para o primeiro jogador (parte inferior da tela)
@@ -39,14 +41,14 @@ struct ContentView: View {
                     Domino(domino: dominoset)
                     
                 }
-                .offset(x: -10, y: 530)
+                .offset(x: -10, y: 547)
             }
             Text("Player 1")
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                     .padding(.bottom)
-                    .offset(x: -15, y: 355)
+                    .offset(x: -15, y: 365)
 
             }
             .navigationBarBackButtonHidden(true)
