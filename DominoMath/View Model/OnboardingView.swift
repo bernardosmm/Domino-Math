@@ -11,7 +11,8 @@ struct OnboardingView: View {
         ZStack {
             Color(.white).ignoresSafeArea()
 
-            VStack {
+            VStack(spacing: 50) {
+                Spacer()
                 Spacer()
 
                 Text("Regras")
@@ -19,37 +20,42 @@ struct OnboardingView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                     .padding()
-                    .frame(maxWidth: .infinity, alignment: .center)
 
                 Spacer()
 
                 ScrollView {
-                    VStack(alignment: .center, spacing: 15) {
+                    VStack(alignment: .leading, spacing: 15) {
                         Text("Cada jogador começa com 6 peças aleatórias.")
                             .font(.title)
                             .foregroundColor(.black)
+                            .padding()
 
                         Text("Cada peça tem duas expressões matemáticas, uma em cada ponta.")
                             .font(.title)
                             .foregroundColor(.black)
+                            .padding(.leading, 25)
 
                         Text("O objetivo é resolver as expressões o mais rápido possível para encaixá-las no tempo determinado.")
                             .font(.title)
                             .foregroundColor(.black)
+                            .padding(.leading, 20)
                     }
-                    .padding(20) // Adicionar espaço ao redor dos textos
                 }
 
                 Spacer()
             }
         }
+        .padding(20) // Ajuste o valor de preenchimento conforme necessário
+        .background(Color.white)
+        .cornerRadius(20) // Ajuste o valor de arredondamento conforme necessário
     }
 }
 
-// Preview do layout no Canvas
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
     }
 }
 
+
+// Preview do layout no Canvas
