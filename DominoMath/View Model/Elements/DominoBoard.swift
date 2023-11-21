@@ -6,21 +6,22 @@
 //
 
 import SwiftUI
-import Foundation
 
 struct DominoBoard: View {
     var body: some View {
         let boardSize = UIScreen.main.bounds
         let boardWidth = boardSize.width
         let boardHeight = boardSize.height
-        
-        
+
         ZStack {
             Rectangle()
                 .fill(Color(hex: "2B8B81"))
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-               .frame(width: boardWidth * 4, height: boardHeight * 1.0)
-                Image("oii")
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: boardWidth * 4, height: boardHeight * 1.0)
+
+            Image("oii")
+                //.resizable() // Torna a imagem redimensionável
+                .scaledToFit() // Ajusta a imagem mantendo a proporção
                 .frame(width: boardWidth * 4, height: boardHeight * 0.5)
                 .scaledToFit()
         }
