@@ -3,17 +3,14 @@ import SwiftUI
 
 struct Domino: View {
     
-    //rotation
     @State var angle: Angle = Angle(degrees: 0)
 
-    //drag
     @State private var location: CGPoint = CGPoint(x: 50, y: 50)
     
     var shouldRotateText: Bool {
         return abs(angle.degrees) > 45
     }
     
-    //var model
     var domino: DominoModel
     
     var body: some View {
@@ -27,7 +24,6 @@ struct Domino: View {
                         Text(domino.ladoATexto)
                             .font(.title2)
                             .foregroundColor(Color.black)
-//                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
                 Rectangle()
                     .fill(Color.white)
@@ -36,7 +32,6 @@ struct Domino: View {
                         Text(domino.ladoBTexto)
                             .font(.title2)
                             .foregroundColor(Color.black)
-//                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
             }
             
@@ -56,7 +51,6 @@ struct Domino: View {
                 }
         )
         //DominoDrag
-//        .offset(x: location.x, y: location.y)
         .position(location)
         .simultaneousGesture(
             DragGesture(minimumDistance: 0)

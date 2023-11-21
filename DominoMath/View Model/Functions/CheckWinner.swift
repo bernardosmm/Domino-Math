@@ -8,11 +8,15 @@
 import Foundation
 import SwiftUI
 
-//State var contadorPlayer1: Int = 0
-//
-//func checkIfOnTheBoard(location) -> Bool {
-//    return (-23.0...23.0).contains(location.x) && (-103.0...100.0).contains(location.y)
-//}
+//eixo x: -116 e 635
+//eixo y: -103
+
+let location1: Double = -23.0
+let location2: Double = -103.0
+
+func checkIfOnTheBoard(location1: Double, location2: Double) -> Bool {
+    return (-23.0...23.0).contains(location1) && (-103.0...100.0).contains(location2)
+}
 
 func checkWinner() {
     

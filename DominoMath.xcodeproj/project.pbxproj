@@ -83,10 +83,10 @@
 			children = (
 				CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */,
 				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
+				CE2832412B06B49100F84959 /* OnboardingView.swift */,
 				CE04A9DB2B03FC1900E51F97 /* Elements */,
 				CE04A9DC2B04026500E51F97 /* Functions */,
 				CE04A9D62AF17F7600E51F97 /* Model */,
-				CE2832412B06B49100F84959 /* OnboardingView.swift */,
 			);
 			name = View;
 			path = "View Model";
