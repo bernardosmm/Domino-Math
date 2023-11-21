@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var isOnboardingDismissed = false
     @State private var isOnboardingPresented = false
+    @State private var isGameOverPresented = false
     
+    @State var player1Hand: [DominoModel] = []
+    @State var player2Hand: [DominoModel] = []
     
+    @State var winner: String = ""
     
     var body: some View {
         
@@ -30,11 +35,9 @@ struct ContentView: View {
                     .rotationEffect(.degrees(180))
                     .offset(x:-1 , y: -320)
                 
-                
-                
                 HStack {
-                    ForEach(Array(dominoes.shuffled().prefix(6))) { dominoset in
-                        Domino(domino: dominoset)
+                    ForEach($player2Hand) { $dominoset in
+                        Domino(domino: $dominoset)
                             .rotationEffect(.degrees(180))
                     }
                     .offset(y: -UIScreen.main.bounds.height * 0.44)
@@ -51,9 +54,8 @@ struct ContentView: View {
                     .offset(x: 1, y: 445)
                 
                 HStack {
-                    ForEach(Array(dominoes.prefix(6))) { dominoset in
-                        Domino(domino: dominoset)
-                        
+                    ForEach($player1Hand) { $dominoset in
+                        Domino(domino: $dominoset)
                     }
                     .offset(y: UIScreen.main.bounds.height * 0.39)
                 }
@@ -78,6 +80,27 @@ struct ContentView: View {
                         isOnboardingPresented = false
                     }
             }
+        }
+        .sheet(isPresented: $isGameOverPresented) { [winner] in
+            Text("\(winner) venceu!")
+                .font(.largeTitle)
+        }
+        .onChange(of: player1Hand) { newValue in
+            if newValue.allSatisfy(\.taNaBoard) {
+                winner = "Player 1"
+                isGameOverPresented = true
+            }
+        }
+        .onChange(of: player2Hand) { newValue in
+            if newValue.allSatisfy(\.taNaBoard) {
+                winner = "Player 2"
+                isGameOverPresented = true
+            }
+        }
+        .onAppear {
+            let shuffledDominoes = dominoes.shuffled()
+            player1Hand = Array(shuffledDominoes.prefix(6))
+            player2Hand = Array(shuffledDominoes.suffix(6))
         }
     }
 }

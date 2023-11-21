@@ -11,7 +11,7 @@ struct Domino: View {
         return abs(angle.degrees) > 45
     }
     
-    var domino: DominoModel
+    @Binding var domino: DominoModel
     
     var body: some View {
         ZStack {
@@ -60,16 +60,17 @@ struct Domino: View {
                 .onEnded { value in
                     print("A localização é \(location.x)")
                     print("A localização é \(location.y)")
+                    domino.taNaBoard = true
                 }
         )
         .frame(width: 80, height: 120)
         
     }}
 
-struct Domino_Previews: PreviewProvider {
-    static var previews: some View {
-            ForEach(dominoes) { dominoset in
-                Domino(domino: dominoset)
-            }
-        }
-    }
+//struct Domino_Previews: PreviewProvider {
+//    static var previews: some View {
+//            ForEach(dominoes) { dominoset in
+//                Domino(domino: dominoset)
+//            }
+//        }
+//    }

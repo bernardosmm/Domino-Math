@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 //eixo x: -116 e 635
-//eixo y: -103
+//eixo y: -103 e -768
 
 let location1: Double = -23.0
 let location2: Double = -103.0
