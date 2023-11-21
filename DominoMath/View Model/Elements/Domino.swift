@@ -64,7 +64,8 @@ struct Domino: View {
                     self.location = value.location
                 }
                 .onEnded { value in
-                    print("onEnded")
+                    print("A localização é \(location.x)")
+                    print("A localização é \(location.y)")
                 }
         )
         .frame(width: 80, height: 120)

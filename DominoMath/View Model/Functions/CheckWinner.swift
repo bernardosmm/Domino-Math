@@ -8,6 +8,12 @@
 import Foundation
 import SwiftUI
 
+//State var contadorPlayer1: Int = 0
+//
+//func checkIfOnTheBoard(location) -> Bool {
+//    return (-23.0...23.0).contains(location.x) && (-103.0...100.0).contains(location.y)
+//}
+
 func checkWinner() {
     
 }
