@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var isOnboardingDismissed = false
     @State private var isOnboardingPresented = false
-   
-
+    
+    
     
     var body: some View {
         
@@ -37,26 +37,26 @@ struct ContentView: View {
                         Domino(domino: dominoset)
                             .rotationEffect(.degrees(180))
                     }
-                    .offset(x: -10, y: -520)
+                    .offset(y: -UIScreen.main.bounds.height * 0.44)
                 }
             }
             VStack {
                 Text("Player 1")
-                        .font(.system(size: 20))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color(hex: "2B8B81"))
-                        .cornerRadius(15)
-                        .offset(x: 1, y: 445)
+                    .font(.system(size: 20))
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color(hex: "2B8B81"))
+                    .cornerRadius(15)
+                    .offset(x: 1, y: 445)
                 
-            HStack {
-                ForEach(Array(dominoes.shuffled().prefix(6))) { dominoset in
-                    Domino(domino: dominoset)
-                    
+                HStack {
+                    ForEach(Array(dominoes.prefix(6))) { dominoset in
+                        Domino(domino: dominoset)
+                        
+                    }
+                    .offset(y: UIScreen.main.bounds.height * 0.39)
                 }
-                .offset(x: 1, y: 460)
-            }
             }
             .navigationBarBackButtonHidden(true)
             .onAppear(perform: {
@@ -64,16 +64,26 @@ struct ContentView: View {
                     isOnboardingPresented = true
                 }
             })
-            }
-        .sheet(isPresented: $isOnboardingPresented) {
-            OnboardingView()
         }
-
-
+        .sheet(isPresented: $isOnboardingPresented) {
+            if #available(iOS 16.4, *) {
+                OnboardingView()
+                    .presentationBackground(.clear)
+                    .onTapGesture {
+                        isOnboardingPresented = false
+                    }
+            } else {
+                OnboardingView()
+                    .onTapGesture {
+                        isOnboardingPresented = false
+                    }
+            }
+        }
     }
 }
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
+}
+
