@@ -14,6 +14,8 @@
 		43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE7D972ADC2E4E00674198 /* ContentView.swift */; };
 		43BE7D9A2ADC2E5100674198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D992ADC2E5100674198 /* Assets.xcassets */; };
 		43BE7D9D2ADC2E5100674198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */; };
+		CE11C9E32B11143600A44E1A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11C9E22B11143600A44E1A /* GameOverView.swift */; };
+		CE11C9E52B111E3500A44E1A /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11C9E42B111E3500A44E1A /* AppContext.swift */; };
 		CE2832422B06B49100F84959 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2832412B06B49100F84959 /* OnboardingView.swift */; };
 		CEA250802AE83D3F00E3AC5B /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,8 @@
 		43BE7D972ADC2E4E00674198 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43BE7D992ADC2E5100674198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE11C9E22B11143600A44E1A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameOverView.swift; path = "DominoMath/View Model/GameOverView.swift"; sourceTree = SOURCE_ROOT; };
+		CE11C9E42B111E3500A44E1A /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 		CE2832412B06B49100F84959 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,8 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */,
-				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
 				CE2832412B06B49100F84959 /* OnboardingView.swift */,
+				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
+				CE11C9E22B11143600A44E1A /* GameOverView.swift */,
 				CE04A9DB2B03FC1900E51F97 /* Elements */,
 				CE04A9D62AF17F7600E51F97 /* Model */,
 			);
@@ -92,6 +97,7 @@
 		CE04A9D62AF17F7600E51F97 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE11C9E42B111E3500A44E1A /* AppContext.swift */,
 				43936B222ADC9489007B0EEF /* DominoModel.swift */,
 				43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */,
 			);
@@ -179,10 +185,12 @@
 			files = (
 				CEA250802AE83D3F00E3AC5B /* InicioView.swift in Sources */,
 				43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */,
+				CE11C9E32B11143600A44E1A /* GameOverView.swift in Sources */,
 				43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */,
 				43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */,
 				CE2832422B06B49100F84959 /* OnboardingView.swift in Sources */,
 				43BE7D962ADC2E4E00674198 /* DominoMathApp.swift in Sources */,
+				CE11C9E52B111E3500A44E1A /* AppContext.swift in Sources */,
 				43936B232ADC9489007B0EEF /* DominoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

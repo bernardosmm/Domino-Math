@@ -12,11 +12,11 @@ struct ContentView: View {
     @State private var isOnboardingDismissed = false
     @State private var isOnboardingPresented = false
     @State private var isGameOverPresented = false
+    @ObservedObject var appContext = AppContext.instance
     
     @State var player1Hand: [DominoModel] = []
     @State var player2Hand: [DominoModel] = []
     
-    @State var winner: String = ""
     
     var body: some View {
         
@@ -81,19 +81,24 @@ struct ContentView: View {
                     }
             }
         }
-        .sheet(isPresented: $isGameOverPresented) { [winner] in
-            Text("\(winner) venceu!")
-                .font(.largeTitle)
+        .sheet(isPresented: $isGameOverPresented) { /*[winner]*//* in*/
+            if #available(iOS 16.4, *){
+                GameOverView()
+                .presentationBackground(.clear)
+            } else {
+                GameOverView()
+            }
+            
         }
         .onChange(of: player1Hand) { newValue in
             if newValue.allSatisfy(\.taNaBoard) {
-                winner = "Player 1"
+                appContext.winner = "Player 1"
                 isGameOverPresented = true
             }
         }
         .onChange(of: player2Hand) { newValue in
             if newValue.allSatisfy(\.taNaBoard) {
-                winner = "Player 2"
+                appContext.winner = "Player 2"
                 isGameOverPresented = true
             }
         }
