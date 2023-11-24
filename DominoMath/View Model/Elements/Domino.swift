@@ -3,18 +3,15 @@ import SwiftUI
 
 struct Domino: View {
     
-    //rotation
     @State var angle: Angle = Angle(degrees: 0)
 
-    //drag
     @State private var location: CGPoint = CGPoint(x: 50, y: 50)
     
     var shouldRotateText: Bool {
         return abs(angle.degrees) > 45
     }
     
-    //var model
-    var domino: DominoModel
+    @Binding var domino: DominoModel
     
     var body: some View {
         ZStack {
@@ -27,7 +24,6 @@ struct Domino: View {
                         Text(domino.ladoATexto)
                             .font(.title2)
                             .foregroundColor(Color.black)
-//                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
                 Rectangle()
                     .fill(Color.white)
@@ -36,7 +32,6 @@ struct Domino: View {
                         Text(domino.ladoBTexto)
                             .font(.title2)
                             .foregroundColor(Color.black)
-//                            .rotationEffect(Angle(degrees: angle.degrees), anchor: .center)
                     )
             }
             
@@ -56,7 +51,6 @@ struct Domino: View {
                 }
         )
         //DominoDrag
-//        .offset(x: location.x, y: location.y)
         .position(location)
         .simultaneousGesture(
             DragGesture(minimumDistance: 0)
@@ -66,16 +60,17 @@ struct Domino: View {
                 .onEnded { value in
                     print("A localização é \(location.x)")
                     print("A localização é \(location.y)")
+                    domino.taNaBoard = true
                 }
         )
         .frame(width: 80, height: 120)
         
     }}
 
-struct Domino_Previews: PreviewProvider {
-    static var previews: some View {
-            ForEach(dominoes) { dominoset in
-                Domino(domino: dominoset)
-            }
-        }
-    }
+//struct Domino_Previews: PreviewProvider {
+//    static var previews: some View {
+//            ForEach(dominoes) { dominoset in
+//                Domino(domino: dominoset)
+//            }
+//        }
+//    }

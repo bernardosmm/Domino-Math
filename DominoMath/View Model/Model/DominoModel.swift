@@ -7,12 +7,22 @@
 
 import Foundation
 
-struct DominoModel: Identifiable {
+struct DominoModel: Identifiable, Equatable {
     let id = UUID()
     let ladoATexto: String
     let ladoAValor: Int
     let ladoBTexto: String
     let ladoBValor: Int
+    var taNaBoard: Bool = false
+    
+    static func == (_ lhs: DominoModel, _ rhs: DominoModel) -> Bool {
+        lhs.id == rhs.id &&
+        lhs.ladoATexto == rhs.ladoATexto &&
+        lhs.ladoAValor == rhs.ladoAValor &&
+        lhs.ladoBTexto == rhs.ladoBTexto &&
+        lhs.ladoBValor == rhs.ladoBValor &&
+        lhs.taNaBoard == rhs.taNaBoard
+    }
 }
 
 let dominoes = [
