@@ -27,10 +27,21 @@ struct OnboardingView: View {
                         .foregroundColor(.black)
                         .padding(.leading, 20)
                     
-                    Text("O objetivo é resolver as expressões o mais rápido possível para encaixá-las no tempo determinado.")
+                    Text("O objetivo é resolver as expressões para encaixá-las na peça determinada.")
                         .font(.title)
                         .foregroundColor(.black)
                         .padding(.leading, 20)
+                    
+                    NavigationLink(destination: ContentView()) {
+                        Text("Vamos lá!")
+                            .font(.largeTitle) //Aumenta a fonte
+                            .foregroundColor(Color(.white))
+                            .padding(EdgeInsets(top: 20, leading: 50, bottom: 20, trailing: 50))
+                            .background(Color(hex: "E74F36"))
+                            .cornerRadius(35)
+                            .font(.system(size:23))
+                            .offset(x: 210, y: 20)
+                    }
                 }
                 .offset(y:-50)
             }
@@ -38,16 +49,12 @@ struct OnboardingView: View {
             .padding(20)
             .background(Color(hex: 0xD9D9D9))
             .cornerRadius(20)
+            
         }
-        NavigationLink(destination: ContentView()) {
-            Text("Vamos lá!")
-                .font(.largeTitle) //Aumenta a fonte
-                .foregroundColor(Color(.white))
-                .padding(EdgeInsets(top: 20, leading: 50, bottom: 20, trailing: 50))
-                .background(Color(hex: "E74F36"))
-                .cornerRadius(35)
-                .font(.system(size:23))
-        }
+        .cornerRadius(90)
+        
+        
+        
     }
 }
 

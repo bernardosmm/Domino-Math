@@ -3,7 +3,7 @@ import SwiftUI
 
 struct Domino: View {
     
-    @State var angle: Angle = Angle(degrees: 0)
+    @State private var angle: Angle = Angle(degrees: 0)
 
     @State private var location: CGPoint = CGPoint(x: 50, y: 50)
     
@@ -52,14 +52,13 @@ struct Domino: View {
         )
         //DominoDrag
         .position(location)
+        .animation(.spring(duration: 0.6, bounce: 0.3), value: location)
         .simultaneousGesture(
             DragGesture(minimumDistance: 0)
                 .onChanged { value in
                     self.location = value.location
                 }
                 .onEnded { value in
-                    print("A localização é \(location.x)")
-                    print("A localização é \(location.y)")
                     domino.taNaBoard = true
                 }
         )
