@@ -51,7 +51,7 @@ struct OnboardingView: View {
             .cornerRadius(20)
             
         }
-        .cornerRadius(90)
+        .cornerRadius(20)
         
         
         

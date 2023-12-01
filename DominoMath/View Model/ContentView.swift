@@ -37,8 +37,11 @@ struct ContentView: View {
                 
                 HStack {
                     ForEach($player2Hand) { $dominoset in
-                        Domino(domino: $dominoset)
-                            .rotationEffect(.degrees(180))
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            Domino(domino: $dominoset)
+                                .rotationEffect(.degrees(180))
+                                .transition(.move(edge: .top))
+                        }
                     }
                     .offset(y: -UIScreen.main.bounds.height * 0.44)
                 }
@@ -55,8 +58,10 @@ struct ContentView: View {
                 
                 HStack {
                     ForEach($player1Hand) { $dominoset in
+                        withAnimation(.easeInOut(duration: 0.5)) {
                         Domino(domino: $dominoset)
                     }
+                }
                     .offset(y: UIScreen.main.bounds.height * 0.39)
                 }
             }
