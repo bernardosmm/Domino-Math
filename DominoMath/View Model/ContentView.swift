@@ -86,7 +86,7 @@ struct ContentView: View {
                     }
             }
         }
-        .sheet(isPresented: $isGameOverPresented) { /*[winner]*//* in*/
+        .sheet(isPresented: $isGameOverPresented, onDismiss: {}) { /*[winner]*//* in*/
             if #available(iOS 16.4, *){
                 GameOverView()
                 .presentationBackground(.clear)

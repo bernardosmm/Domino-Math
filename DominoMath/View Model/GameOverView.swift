@@ -10,6 +10,7 @@ import SwiftUI
 struct GameOverView: View {
     
     @ObservedObject var appContext = AppContext.instance
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         
@@ -37,7 +38,9 @@ struct GameOverView: View {
                     .clipped()
                 
                 
-                NavigationLink(destination: ContentView()) {
+                Button(action: {
+                    dismiss()
+                }) {
                     Text("JOGAR NOVAMENTE")
                         .font(.largeTitle.bold())
                         .foregroundColor(Color(.black))
@@ -46,10 +49,7 @@ struct GameOverView: View {
                         .cornerRadius(35)
                         .font(.system(size:23))
                         .frame(alignment: .bottom)
-                        .offset(y: 90)
                 }
-                
-                
             }
         }
     }
