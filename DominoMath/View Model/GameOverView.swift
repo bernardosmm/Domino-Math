@@ -12,6 +12,8 @@ struct GameOverView: View {
     @ObservedObject var appContext = AppContext.instance
     @Environment(\.dismiss) var dismiss
     
+    let loadHandsHandler: () -> Void
+    
     var body: some View {
         
         ZStack {
@@ -43,6 +45,7 @@ struct GameOverView: View {
                 
                 Button(action: {
                     dismiss()
+                    loadHandsHandler()
                 }) {
                     Image(systemName:"arrow.circlepath")
                         .font(.largeTitle.bold())
@@ -59,5 +62,5 @@ struct GameOverView: View {
 }
 
 #Preview {
-    GameOverView()
+    GameOverView(loadHandsHandler: {})
 }

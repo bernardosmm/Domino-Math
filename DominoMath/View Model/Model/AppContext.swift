@@ -10,4 +10,8 @@ import Foundation
 class AppContext: ObservableObject {
     static var instance = AppContext()
     @Published var winner: String = "AllStars"
+    
+    func reset() {
+        winner = "AllStars"
+    }
 }

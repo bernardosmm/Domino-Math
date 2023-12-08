@@ -11,7 +11,14 @@ struct Domino: View {
         return abs(angle.degrees) > 45
     }
     
-    @Binding var domino: DominoModel
+    @Binding var domino: DominoModel {
+        didSet {
+            if !domino.taNaBoard {
+                angle = .zero
+                location = CGPoint(x: 0, y: 0)
+            }
+        }
+    }
     
     var body: some View {
         ZStack {
@@ -56,7 +63,7 @@ struct Domino: View {
         .simultaneousGesture(
             DragGesture(minimumDistance: 0)
                 .onChanged { value in
-                    self.location = value.location
+                    location = value.location
                 }
                 .onEnded { value in
                     domino.taNaBoard = true

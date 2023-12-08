@@ -12,11 +12,11 @@ struct ContentView: View {
     @State private var isOnboardingDismissed = false
     @State private var isOnboardingPresented = false
     @State private var isGameOverPresented = false
-    @ObservedObject var appContext = AppContext.instance
+    
+    @StateObject var appContext = AppContext.instance
     
     @State var player1Hand: [DominoModel] = []
     @State var player2Hand: [DominoModel] = []
-    
     
     var body: some View {
         
@@ -25,6 +25,7 @@ struct ContentView: View {
             DominoBoard()
             
             VStack {
+                
                 Text("Player 2")
                     .font(.system(size:20))
                     .fontWeight(.bold)
@@ -88,10 +89,10 @@ struct ContentView: View {
         }
         .sheet(isPresented: $isGameOverPresented, onDismiss: {}) { /*[winner]*//* in*/
             if #available(iOS 16.4, *){
-                GameOverView()
+                GameOverView(loadHandsHandler: loadHands)
                 .presentationBackground(.clear)
             } else {
-                GameOverView()
+                GameOverView(loadHandsHandler: loadHands)
             }
             
         }
@@ -108,15 +109,18 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            let shuffledDominoes = dominoes.shuffled()
-            player1Hand = Array(shuffledDominoes.prefix(6))
-            player2Hand = Array(shuffledDominoes.suffix(6))
+            loadHands()
         }
     }
-}
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    func loadHands() {
+        player1Hand.removeAll()
+        player2Hand.removeAll()
+        
+        let shuffledDominoes = dominoes.shuffled()
+        player1Hand = Array(shuffledDominoes.prefix(6))
+        player2Hand = Array(shuffledDominoes.suffix(6))
     }
 }
+
 
