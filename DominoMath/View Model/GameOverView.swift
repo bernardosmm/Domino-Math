@@ -26,27 +26,30 @@ struct GameOverView: View {
                         .stroke(Color(red: 0.99, green: 0.67, blue: 0.13), lineWidth: 17)
                 )
             VStack {
-                Text("\(appContext.winner) venceu!")
-                    .font(.largeTitle.bold())
-                    .foregroundColor(Color(.black))
-                    .frame(alignment: .leading)
                 
                 Image("estrela")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 384, height: 153)
                     .clipped()
+                    .offset(y:-25)
                 
+                
+                Text("\(appContext.winner) venceu!")
+                    .font(.largeTitle.bold())
+                    .foregroundColor(Color(.black))
+                    .frame(alignment: .leading)
+                    .offset(y:-2)
                 
                 Button(action: {
                     dismiss()
                 }) {
-                    Text("JOGAR NOVAMENTE")
+                    Image(systemName:"arrow.circlepath")
                         .font(.largeTitle.bold())
                         .foregroundColor(Color(.black))
                         .padding(EdgeInsets(top: 20, leading: 50, bottom: 20, trailing: 50))
                         .background(Color(red: 0.99, green: 0.67, blue: 0.13))
-                        .cornerRadius(35)
+                        .cornerRadius(40)
                         .font(.system(size:23))
                         .frame(alignment: .bottom)
                 }
