@@ -10,6 +10,7 @@ Aprendizado Divertido : Combina a jogabilidade do domínio com desafios matemát
 Interface Intuitiva : Design atraente e fácil de usar para todas as idades.
 
 Tecnologias Utilizadas
+
 Linguagem: Swift
 
 IDE: Xcode
