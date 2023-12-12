@@ -7,6 +7,7 @@ Domino Math é um aplicativo desenvolvido durante um projeto em equipe do Founda
 
 ## Recursos Principais
 Aprendizado Divertido : Combina a jogabilidade do domínio com desafios matemáticos.
+
 Interface Intuitiva : Design atraente e fácil de usar para todas as idades.
 
 ![Telas Projeto](https://raw.githubusercontent.com/juliams1/DominoMath/main/telasApp.png)
