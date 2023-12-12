@@ -11,6 +11,7 @@ Interface Intuitiva : Design atraente e fácil de usar para todas as idades.
 
 Tecnologias Utilizadas
 Linguagem: Swift
+
 IDE: Xcode
 ![Telas Projeto](https://raw.githubusercontent.com/juliams1/DominoMath/main/telasApp.png)
 
@@ -19,8 +20,11 @@ Faça o clone do repositório.
 Abra o projeto no Xcode.
 Execute o aplicativo em um simulador ou dispositivo iOS.
 Colaboradores
+
 Julia Maia
+
 Taissa Vitoria
+
 Bernardo Santos
 
 
