@@ -24,9 +24,9 @@ Execute o aplicativo em um simulador ou dispositivo iOS.
 
 Colaboradores
 
-[Nome do Contribuidor 1](https://github.com/juliams1)
-[Nome do Contribuidor 2](https://github.com/taissa-rodrigues)
-[Nome do Contribuidor 3](https://github.com/bernardosmm)
+[Julia Maia](https://github.com/juliams1)
+[Taissa Rodrigues](https://github.com/taissa-rodrigues)
+[Bernardo Santos](https://github.com/bernardosmm)
 
 
 Agradecimentos
