@@ -21,6 +21,7 @@ Como executar
 Faça o clone do repositório.
 Abra o projeto no Xcode.
 Execute o aplicativo em um simulador ou dispositivo iOS.
+
 Colaboradores
 
 Julia Maia
