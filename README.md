@@ -26,7 +26,7 @@ Colaboradores
 
 
 ## Agradecimentos
-Agradecemos à Apple Developer Academy e a todos os membros da equipe que desenvolveram este projeto incrível.
+Agradecemos à Apple Developer Academy e a todos os membros da nossa equipe que desenvolveram este projeto incrível.
 
 
 
