@@ -25,7 +25,9 @@ Execute o aplicativo em um simulador ou dispositivo iOS.
 Colaboradores
 
 [Julia Maia](https://github.com/juliams1)
+
 [Taissa Rodrigues](https://github.com/taissa-rodrigues)
+
 [Bernardo Santos](https://github.com/bernardosmm)
 
 
