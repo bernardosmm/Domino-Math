@@ -13,6 +13,7 @@ Tecnologias Utilizadas
 Linguagem: Swift
 
 IDE: Xcode
+
 ![Telas Projeto](https://raw.githubusercontent.com/juliams1/DominoMath/main/telasApp.png)
 
 Como executar
